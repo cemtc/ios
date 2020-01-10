@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TokenHeader" customModule="wallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="210"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="交易记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9M-FE-HiO">
+                    <rect key="frame" x="10" y="96.5" width="57.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共30笔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3SX-Xe-TFf">
+                    <rect key="frame" x="358" y="96.5" width="46" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N9W-7n-oUa">
+                    <rect key="frame" x="10" y="209" width="394" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="9Mh-U7-lVy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.19607843137254902" green="0.22352941176470587" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3SX-Xe-TFf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8O1-z1-0WP"/>
+                <constraint firstItem="z9M-FE-HiO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="EpH-qX-PV7"/>
+                <constraint firstItem="N9W-7n-oUa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="KWA-zl-1NY"/>
+                <constraint firstAttribute="bottom" secondItem="N9W-7n-oUa" secondAttribute="bottom" id="UqY-Ag-1aM"/>
+                <constraint firstAttribute="trailing" secondItem="N9W-7n-oUa" secondAttribute="trailing" constant="10" id="Wf5-J1-UxF"/>
+                <constraint firstItem="z9M-FE-HiO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qyc-ox-1sS"/>
+                <constraint firstAttribute="trailing" secondItem="3SX-Xe-TFf" secondAttribute="trailing" constant="10" id="tTw-HX-ifi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="line" destination="N9W-7n-oUa" id="9q4-9N-qUm"/>
+                <outlet property="numberLB" destination="3SX-Xe-TFf" id="ADJ-ev-EX3"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="164.73214285714286"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yJ2-s7-0gp">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--登录页面-->
+        <scene sceneID="bBf-AO-67h">
+            <objects>
+                <viewController storyboardIdentifier="CustomLogin" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yJ2-s7-0gp" userLabel="登录页面" customClass="CustomLoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iBY-5p-yVa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="create_background" translatesAutoresizingMaskIntoConstraints="NO" id="3FQ-0E-x5E">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qz8-pC-JfJ">
+                                <rect key="frame" x="0.0" y="300.5" width="414" height="295.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CCM Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXz-Uz-LwE">
+                                        <rect key="frame" x="134.5" y="0.0" width="145" height="37"/>
+                                        <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your first digital identity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4h-9p-R6B">
+                                        <rect key="frame" x="94.5" y="47" width="225.5" height="28"/>
+                                        <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjK-zi-xnJ">
+                                        <rect key="frame" x="40" y="135" width="334" height="48"/>
+                                        <color key="backgroundColor" red="0.32941176470588235" green="0.68235294117647061" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="VDS-2y-U0L"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="16"/>
+                                        <state key="normal" title="Create Wallet"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="ayCornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="createIdentity:" destination="yJ2-s7-0gp" eventType="touchUpInside" id="zQI-uf-QCg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbW-Gq-WBO">
+                                        <rect key="frame" x="40" y="203" width="334" height="48"/>
+                                        <color key="backgroundColor" red="0.3294117647" green="0.68235294120000001" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="n0M-Iz-TQZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="16"/>
+                                        <state key="normal" title="Import Wallet"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="ayCornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="importWallet:" destination="yJ2-s7-0gp" eventType="touchUpInside" id="VSz-i6-wch"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h86-cQ-df2">
+                                        <rect key="frame" x="70" y="261" width="20" height="20"/>
+                                        <color key="backgroundColor" red="0.87058823529999996" green="0.1960784314" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="ggC-Al-QLn"/>
+                                            <constraint firstAttribute="width" constant="20" id="qCe-UT-0MP"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="readAgreement:" destination="yJ2-s7-0gp" eventType="touchUpInside" id="kj8-Zb-igf"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnp-zl-OcD">
+                                        <rect key="frame" x="100" y="256.5" width="180" height="29"/>
+                                        <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="12"/>
+                                        <state key="normal" title="我已阅读并同意《用户服务协议》">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="agreement:" destination="yJ2-s7-0gp" eventType="touchUpInside" id="21m-As-ZwS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="EbW-Gq-WBO" firstAttribute="leading" secondItem="qz8-pC-JfJ" secondAttribute="leading" constant="40" id="8UK-b7-Rmt"/>
+                                    <constraint firstItem="EbW-Gq-WBO" firstAttribute="top" secondItem="yjK-zi-xnJ" secondAttribute="bottom" constant="20" id="8iM-yp-8eC"/>
+                                    <constraint firstItem="yjK-zi-xnJ" firstAttribute="top" secondItem="g4h-9p-R6B" secondAttribute="bottom" constant="60" id="Hl0-YN-2e2"/>
+                                    <constraint firstItem="Rnp-zl-OcD" firstAttribute="leading" secondItem="h86-cQ-df2" secondAttribute="trailing" constant="10" id="I4O-O3-2KD"/>
+                                    <constraint firstItem="g4h-9p-R6B" firstAttribute="centerX" secondItem="qz8-pC-JfJ" secondAttribute="centerX" id="Jfa-h8-jO7"/>
+                                    <constraint firstItem="yjK-zi-xnJ" firstAttribute="leading" secondItem="qz8-pC-JfJ" secondAttribute="leading" constant="40" id="LY2-Qo-xsg"/>
+                                    <constraint firstAttribute="trailing" secondItem="EbW-Gq-WBO" secondAttribute="trailing" constant="40" id="PL4-IW-sWI"/>
+                                    <constraint firstItem="g4h-9p-R6B" firstAttribute="top" secondItem="cXz-Uz-LwE" secondAttribute="bottom" constant="10" id="Rej-jQ-tLi"/>
+                                    <constraint firstItem="h86-cQ-df2" firstAttribute="leading" secondItem="EbW-Gq-WBO" secondAttribute="leading" constant="30" id="S9n-dc-ytq"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rnp-zl-OcD" secondAttribute="bottom" constant="10" id="aDQ-Dy-v8p"/>
+                                    <constraint firstAttribute="trailing" secondItem="yjK-zi-xnJ" secondAttribute="trailing" constant="40" id="cuS-Dg-mvt"/>
+                                    <constraint firstItem="cXz-Uz-LwE" firstAttribute="top" secondItem="qz8-pC-JfJ" secondAttribute="top" id="h6V-nK-huD"/>
+                                    <constraint firstItem="Rnp-zl-OcD" firstAttribute="centerY" secondItem="h86-cQ-df2" secondAttribute="centerY" id="mz5-qY-cd3"/>
+                                    <constraint firstItem="cXz-Uz-LwE" firstAttribute="centerX" secondItem="qz8-pC-JfJ" secondAttribute="centerX" id="pgd-Jx-jlF"/>
+                                    <constraint firstItem="h86-cQ-df2" firstAttribute="top" secondItem="EbW-Gq-WBO" secondAttribute="bottom" constant="10" id="vd5-Gc-E8B"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qz8-pC-JfJ" firstAttribute="leading" secondItem="Pn3-wM-dCI" secondAttribute="leading" id="6hr-t4-TCD"/>
+                            <constraint firstItem="Pn3-wM-dCI" firstAttribute="trailing" secondItem="qz8-pC-JfJ" secondAttribute="trailing" id="77b-0k-Cda"/>
+                            <constraint firstItem="3FQ-0E-x5E" firstAttribute="leading" secondItem="Pn3-wM-dCI" secondAttribute="leading" id="UBX-4k-gpT"/>
+                            <constraint firstItem="qz8-pC-JfJ" firstAttribute="centerY" secondItem="iBY-5p-yVa" secondAttribute="centerY" id="bF3-ex-uzc"/>
+                            <constraint firstItem="Pn3-wM-dCI" firstAttribute="trailing" secondItem="3FQ-0E-x5E" secondAttribute="trailing" id="dgS-yu-Wwc"/>
+                            <constraint firstAttribute="bottom" secondItem="3FQ-0E-x5E" secondAttribute="bottom" id="kLv-v2-jmg"/>
+                            <constraint firstItem="3FQ-0E-x5E" firstAttribute="top" secondItem="iBY-5p-yVa" secondAttribute="top" id="zUy-8X-cUE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pn3-wM-dCI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oOf-tx-x2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173.91304347826087" y="193.52678571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="create_background" width="375" height="812"/>
+    </resources>
+</document>

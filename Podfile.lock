@@ -1,0 +1,230 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Alamofire (4.8.2)
+  - BigInt (3.1.0):
+    - SipHash (~> 1.2)
+  - Bugly (2.5.0)
+  - CryptoSwift (0.15.0)
+  - FLAnimatedImage (1.0.12)
+  - IQKeyboardManager (6.3.0)
+  - IQKeyboardManagerSwift (6.3.0)
+  - keccak.c (0.1.3)
+  - Kingfisher (4.10.1)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJExtension (3.0.17)
+  - MJRefresh (3.2.0)
+  - OpenSSL-Universal (1.0.2.17)
+  - PromiseKit (6.8.5):
+    - PromiseKit/CorePromise (= 6.8.5)
+    - PromiseKit/Foundation (= 6.8.5)
+    - PromiseKit/UIKit (= 6.8.5)
+  - PromiseKit/CorePromise (6.8.5)
+  - PromiseKit/Foundation (6.8.5):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.8.5):
+    - PromiseKit/CorePromise
+  - ReactiveObjC (2.1.2)
+  - Realm (3.16.1):
+    - Realm/Headers (= 3.16.1)
+  - Realm/Headers (3.16.1)
+  - RealmSwift (3.16.1):
+    - Realm (= 3.16.1)
+  - scrypt.c (0.1.1)
+  - SDWebImage (4.4.7):
+    - SDWebImage/Core (= 4.4.7)
+  - SDWebImage/Core (4.4.7)
+  - SDWebImage/GIF (4.4.7):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
+  - secp256k1.c (0.1.2)
+  - secp256k1.swift (0.1.4)
+  - SipHash (1.2.2)
+  - SnapKit (4.2.0)
+  - SocketRocket (0.5.1)
+  - SwiftyJSON (5.0.0)
+  - Toast-Swift (5.0.0)
+  - UMengAnalytics-NO-IDFA (4.2.5)
+  - UMengUShare/Core (6.4.8.2):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.4.8.2)
+  - UMengUShare/Social/QQ (6.4.8.2):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedQQ
+  - UMengUShare/Social/ReducedQQ (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedSina (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedWeChat (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/Sina (6.4.8.2):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedSina
+  - UMengUShare/Social/WeChat (6.4.8.2):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedWeChat
+  - UMengUShare/UI (6.4.8.2):
+    - UMengUShare/Core
+  - Web3 (0.3.1):
+    - Web3/Core (= 0.3.1)
+    - Web3/HTTPExtension (= 0.3.1)
+  - Web3/ContractABI (0.3.1):
+    - Web3/Core
+  - Web3/Core (0.3.1):
+    - BigInt (~> 3.1)
+    - CryptoSwift (~> 0.8)
+    - secp256k1.swift (~> 0.1)
+  - Web3/HTTPExtension (0.3.1):
+    - Web3/Core
+  - Web3/PromiseKit (0.3.1):
+    - PromiseKit/CorePromise (~> 6.0)
+    - Web3/Core
+  - web3swift.pod (2.1.10):
+    - BigInt (~> 3.1)
+    - keccak.c (~> 0.1)
+    - PromiseKit (~> 6.4)
+    - scrypt.c (~> 0.1)
+    - secp256k1.c (~> 0.1)
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYImage/WebP (1.0.4):
+    - YYImage/Core
+  - YYText (1.0.7)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+  - ZBarSDK (1.3.1)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - Alamofire
+  - Bugly
+  - FLAnimatedImage
+  - IQKeyboardManager
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - Masonry
+  - MBProgressHUD
+  - MJExtension
+  - MJRefresh
+  - OpenSSL-Universal
+  - ReactiveObjC (~> 2.1.0)
+  - RealmSwift
+  - SDWebImage
+  - SDWebImage/GIF
+  - SnapKit
+  - SocketRocket
+  - SwiftyJSON
+  - Toast-Swift
+  - UMengAnalytics-NO-IDFA
+  - UMengUShare/Social/QQ
+  - UMengUShare/Social/Sina
+  - UMengUShare/Social/WeChat
+  - UMengUShare/UI
+  - Web3
+  - Web3/ContractABI
+  - Web3/PromiseKit
+  - web3swift.pod
+  - YYImage/WebP
+  - YYText
+  - YYWebImage
+  - ZBarSDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - Alamofire
+    - BigInt
+    - Bugly
+    - CryptoSwift
+    - FLAnimatedImage
+    - IQKeyboardManager
+    - IQKeyboardManagerSwift
+    - keccak.c
+    - Kingfisher
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - OpenSSL-Universal
+    - PromiseKit
+    - ReactiveObjC
+    - Realm
+    - RealmSwift
+    - scrypt.c
+    - SDWebImage
+    - secp256k1.c
+    - secp256k1.swift
+    - SipHash
+    - SnapKit
+    - SocketRocket
+    - SwiftyJSON
+    - Toast-Swift
+    - UMengAnalytics-NO-IDFA
+    - UMengUShare
+    - Web3
+    - web3swift.pod
+    - YYCache
+    - YYImage
+    - YYText
+    - YYWebImage
+    - ZBarSDK
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  CryptoSwift: 769f58a9e89f64e8796c2e59ce5f002dc81a2438
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  IQKeyboardManager: 2ca9d64893247556f53523dcd8d78641f0ba7c23
+  IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  keccak.c: 859583afdaccb4e4fcc0f0096064d101580313f4
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  OpenSSL-Universal: ff04c2e6befc3f1247ae039e60c93f76345b3b5a
+  PromiseKit: 9616b0afef31eae56ab9ce044c8ec2b8612a15cd
+  ReactiveObjC: 7b6782ae39f9ac0f57205c3b0c0b69b9dd7048c0
+  Realm: 601cacc51d8be3b17a377ef787be0f6ee0e76cf1
+  RealmSwift: 486f2e09d5a8ccff63ed66e48d0846b111deb5e5
+  scrypt.c: b42ae06183251329d2b2c620c226fb541a4a3592
+  SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
+  secp256k1.c: db47b726585d80f027423682eb369729e61b3b20
+  secp256k1.swift: a7e7a214f6db6ce5db32cc6b2b45e5c4dd633634
+  SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
+  UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
+  UMengUShare: 370d180101e13ee0227ae657ab119ba97243d2b3
+  Web3: e9be7ef88585e252df50abc28538d6e4691c786e
+  web3swift.pod: e3bd1c18a84e9fc1c4bfab8ebc0754b0806a7bcd
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+  ZBarSDK: 4c1b5daeb7d6cc67dc9355e690af0230a661f6ec
+
+PODFILE CHECKSUM: 3a8c718fbaea54e511f4666a5613ef3d8ac04f4d
+
+COCOAPODS: 1.7.3

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="headerSection" customClass="CustomImportPrivateKeySectionView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="234"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="er7-xh-HuL">
+                    <rect key="frame" x="10" y="37" width="394" height="1"/>
+                    <color key="backgroundColor" red="0.38823529410000002" green="0.44705882349999998" blue="0.49019607840000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="VeT-80-K6F"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The wallet password can be modified when importing using the private key." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BfT-X4-U1c">
+                    <rect key="frame" x="20" y="10" width="374" height="17"/>
+                    <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="12"/>
+                    <color key="textColor" red="0.38823529411764707" green="0.44705882352941173" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="63r-rT-LkC">
+                    <rect key="frame" x="10" y="48" width="394" height="150"/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.92549019607843142" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="4mh-2O-x8j"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="alphabet"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ayBorderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="ayBorderColor">
+                            <color key="value" red="0.38823529410000002" green="0.44705882349999998" blue="0.49019607840000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ayCornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="er7-xh-HuL" secondAttribute="trailing" constant="10" id="6gc-La-cEM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BfT-X4-U1c" secondAttribute="trailing" constant="20" id="DF3-Hp-NfS"/>
+                <constraint firstItem="63r-rT-LkC" firstAttribute="leading" secondItem="er7-xh-HuL" secondAttribute="leading" id="HY4-Nw-K5v"/>
+                <constraint firstItem="BfT-X4-U1c" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="KfY-IU-r4p"/>
+                <constraint firstItem="63r-rT-LkC" firstAttribute="trailing" secondItem="er7-xh-HuL" secondAttribute="trailing" id="LqH-RT-d0m"/>
+                <constraint firstItem="er7-xh-HuL" firstAttribute="top" secondItem="BfT-X4-U1c" secondAttribute="bottom" constant="10" id="YJA-Gb-PXF"/>
+                <constraint firstItem="BfT-X4-U1c" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="l8j-NO-AU0"/>
+                <constraint firstItem="63r-rT-LkC" firstAttribute="top" secondItem="er7-xh-HuL" secondAttribute="bottom" constant="10" id="m2B-eA-OJu"/>
+                <constraint firstItem="er7-xh-HuL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="nfa-he-TrP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="textView" destination="63r-rT-LkC" id="crK-hE-mzW"/>
+            </connections>
+            <point key="canvasLocation" x="7" y="-141"/>
+        </view>
+        <view contentMode="scaleToFill" id="G2h-uc-ph5" userLabel="footerSection" customClass="CustomImportPrivateKeySectionView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCS-k2-xTz">
+                    <rect key="frame" x="10" y="52" width="394" height="48"/>
+                    <color key="backgroundColor" red="0.3294117647" green="0.68235294120000001" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="sSm-XD-ZEs"/>
+                    </constraints>
+                    <state key="normal" title="import wallet"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="ayCornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="importClick:" destination="G2h-uc-ph5" eventType="touchUpInside" id="4lM-sk-0Ox"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sCS-k2-xTz" firstAttribute="leading" secondItem="TCw-s1-klP" secondAttribute="leading" constant="10" id="Evo-mf-3VC"/>
+                <constraint firstItem="TCw-s1-klP" firstAttribute="trailing" secondItem="sCS-k2-xTz" secondAttribute="trailing" constant="10" id="QNj-Qs-eFX"/>
+                <constraint firstItem="TCw-s1-klP" firstAttribute="bottom" secondItem="sCS-k2-xTz" secondAttribute="bottom" id="kdV-uM-Ho2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="TCw-s1-klP"/>
+            <connections>
+                <outlet property="button" destination="sCS-k2-xTz" id="0Rp-gf-soH"/>
+            </connections>
+        </view>
+    </objects>
+</document>
